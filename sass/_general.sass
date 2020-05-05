@@ -1,0 +1,371 @@
+.container
+	width: 1190px
+	margin: 0 auto
+	position: relative
+	h2
+		color: #4d4d4d
+		font-family: Asap
+		font-size: 46px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 5.52px
+		span
+			border-top: 4px solid #4d4d4d
+			padding-top: 15px
+.header
+	background: url('../img/bg/header-bg.jpg') center center/cover
+	padding-top: 30px
+	&-top
+		display: flex
+		justify-content: space-between
+		margin-bottom: 57px
+		.logo
+			text-align: center
+			h2
+				color: #000
+				font-family: Lato, sans-serif
+				font-size: 14px
+				font-weight: 300
+				text-transform: uppercase
+				letter-spacing: 2.4px
+			h3
+				color: #000
+				font-family: Lato, sans-serif
+				font-size: 4px
+				font-weight: 400
+				text-transform: uppercase
+				letter-spacing: 2.04px
+			img
+				width: 24px
+		nav
+			ul
+				width: 460px
+				display: flex
+				justify-content: space-between
+				list-style-type: none
+				li
+					a
+						color: #4d4d4d
+						font-family: Asap, sans-serif
+						font-size: 16px
+						font-weight: 400
+						text-decoration: none
+						&:not([class='active'])
+							text-transform: uppercase
+						&.active
+							border-bottom: 2px solid #4d4d4d
+							padding-bottom: 7px
+	&-bottom
+		display: flex
+		justify-content: flex-end
+		.left
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0, -50%)
+			h1
+				color: #4d4d4d
+				font-family: Asap, sans-serif
+				font-size: 90px
+				font-weight: 500
+			p
+				color: #4d4d4d
+				font-family: Asap, sans-serif
+				font-size: 22px
+				font-weight: 500
+				margin-top: 2px
+				margin-bottom: 28px
+			.more
+				color: #4d4d4d
+				font-family: Asap, sans-serif
+				font-size: 16px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.96px
+				box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1)
+				background-color: #ffffff
+				text-decoration: none
+				padding: 15px 25px
+				margin-right: 20px
+			.hire
+				color: #4d4d4d
+				font-family: Asap, sans-serif
+				font-size: 16px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.96px
+				text-decoration: none
+				padding: 14px 43px 14px 43px
+				border: 1px solid #4d4d4d
+		.right
+			.photo
+				img
+					height: 670px
+section.about
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 680px
+	.container
+		display: flex
+		justify-content: flex-end
+		.left
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0, -50%)
+			h2
+				line-height: 50px
+				margin-bottom: 12px
+			p
+				color: #4d4d4d
+				width: 469px
+				font-family: Asap, sans-serif
+				font-size: 16px
+				font-weight: 400
+				line-height: 26px
+				margin-top: 12px
+				margin-bottom: 56px
+			a
+				color: #4d4d4d
+				font-family: Asap, sans-serif
+				font-size: 16px
+				font-weight: 500
+				text-transform: uppercase
+				text-decoration: none
+				letter-spacing: 1px
+				border: 1px solid #4d4d4d
+				padding: 15px 30px
+		.right
+			.photo
+				img
+					width: 570px
+section.services
+	background-color: #f6f6f6
+	height: 692px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	.container
+		h2
+			text-align: center
+			margin-bottom: 70px
+		.items
+			display: grid
+			grid-template-columns: 200px 200px 200px
+			grid-template-rows: 188px
+			justify-content: center
+			align-items: baseline
+			gap: 80px 200px
+			text-align: center
+			margin: 0 auto
+			width: 1190px
+			h3
+				color: #4d4d4d
+				font-family: Asap
+				font-size: 24px
+				line-height: 49px
+section.skills
+	height: 765px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	.container
+		h2
+			margin-bottom: 60px
+			text-align: center
+		.photo
+			text-align: center
+section.portfolio
+	min-height: 1090px
+	background-color: #f6f6f6
+	display: flex
+	flex-direction: column
+	justify-content: center
+	.container
+		h2
+			margin-bottom: 45px
+			text-align: center
+		.items
+			display: grid
+			grid-template-columns: 368px 368px 368px
+			justify-content: center
+			gap: 30px
+		button
+			color: #4d4d4d
+			font-family: Asap, sans-serif
+			font-size: 16px
+			font-weight: 500
+			padding: 15px 30px
+			margin-top: 28px
+			position: relative
+			left: 50%
+			transform: translate(-50%)
+			text-transform: uppercase
+			letter-spacing: 0.96px
+			box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1)
+			background-color: #fff
+			cursor: pointer
+			outline: none
+			border: none
+section.testimonials
+	height: 710px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	.container
+		h2
+			text-align: center
+			margin-bottom: 58px
+		.testimonial
+			display: flex
+			justify-content: space-between
+			border: 1px solid #212121
+			width: 955px
+			margin: 0 auto
+			padding: 60px 80px
+			.avatar
+				margin-right: 30px
+				img
+					width: 160px
+			.content
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				h3
+					color: #212121
+					font-family: Asap, sans-serif
+					font-size: 30px
+					font-weight: 500
+					text-transform: uppercase
+				.descr
+					color: #212121
+					font-family: Asap, sans-serif
+					font-size: 12px
+					text-transform: uppercase
+				p
+					color: #212121
+					font-family: Asap, sans-serif
+					width: 570px
+					font-size: 16px
+					font-weight: 400
+					line-height: 26px
+					text-transform: uppercase
+section.static
+	background-color: #f6f6f6
+	height: 300px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-bottom: 150px
+	.container
+		.items
+			display: flex
+			justify-content: space-between
+			align-items: baseline
+			text-align: center
+			.photo
+				margin-bottom: 30px
+			h3
+				color: #212121
+				font-family: Asap
+				font-size: 22px
+				font-weight: 400
+				line-height: 32px
+				text-transform: uppercase
+				font-family: Asap, sans-serif
+				font-weight: 400
+				span
+					font-family: Asap, sans-serif
+					font-size: 30px
+					font-weight: 500
+section.contact
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 768px
+	position: relative
+	background: url(../img/bg/contact_bg.jpg) center (center/cover)
+	.container
+		h2
+			text-align: center
+			margin-bottom: 70px
+			color: #fff
+			span
+				border-color: #fff
+		form
+			display: block
+			width: 768px
+			position: relative
+			left: 50%
+			transform: translate(-50%)
+			input
+				width: 370px
+				height: 57px
+				background-color: #fff
+				padding: 15px 30px
+				color: #212121
+				font-family: Asap, sans-serif
+				font-size: 16px
+				font-weight: 400
+				letter-spacing: 0.96px
+			textarea
+				width: 744px
+				height: 207px
+				background-color: #fff
+				color: #212121
+				font-family: Asap, sans-serif
+				font-size: 16px
+				font-weight: 400
+				line-height: 67px
+				margin-top: 30px
+				margin-bottom: 30px
+				padding: 10px 30px
+				letter-spacing: 0.96px
+				resize: none
+			button
+				color: #4d4d4d
+				font-family: Asap, sans-serif
+				font-size: 16px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.96px
+				position: relative
+				left: 50%
+				transform: translate(-50%)
+				padding: 15px 30px
+				box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1)
+				background-color: #ffffff
+				border: none
+				outline: none
+		hr
+			margin-top: 58px
+			margin-bottom: 26px
+		.link
+			width: 206px
+			display: flex
+			justify-content: space-between
+			div
+				width: 27px
+				height: 27px
+				&:first-child
+					background: #fff url('../img/icons/facebook.png') center center no-repeat
+				&:nth-child(2)
+					background: #0084b4 url('../img/icons/twitter.png') center center no-repeat
+				&:nth-child(3)
+					background: #fff url('../img/icons/in.png') center center no-repeat
+				&:nth-child(4)
+					background: #fff url('../img/icons/google.png') center center no-repeat
+				&:nth-child(5)
+					background: #fff url('../img/icons/be.png') center center no-repeat
+				&:last-child
+					background: #fff url('../img/icons/ball.png') center center no-repeat
+		p
+			color: #fff
+			font-family: Montserrat, sans-serif
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 0.96px
+			position: absolute
+			left: 50%
+			transform: translate(-50%)
