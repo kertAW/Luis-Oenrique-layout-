@@ -55,6 +55,11 @@
 						&.active
 							border-bottom: 2px solid #4d4d4d
 							padding-bottom: 7px
+							&:hover
+								border: none
+						&:hover
+							border-bottom: 2px solid #4d4d4d
+							padding-bottom: 7px
 	&-bottom
 		display: flex
 		justify-content: flex-end
@@ -76,6 +81,7 @@
 				margin-top: 2px
 				margin-bottom: 28px
 			.more
+				display: inline-block
 				color: #4d4d4d
 				font-family: Asap, sans-serif
 				font-size: 16px
@@ -87,6 +93,9 @@
 				text-decoration: none
 				padding: 15px 25px
 				margin-right: 20px
+				transition: 0.2s transform ease-in-out
+				&:hover
+					transform: scale(1.1)
 			.hire
 				color: #4d4d4d
 				font-family: Asap, sans-serif
@@ -96,7 +105,11 @@
 				letter-spacing: 0.96px
 				text-decoration: none
 				padding: 14px 43px 14px 43px
-				border: 1px solid #4d4d4d
+				outline: 1px solid #4d4d4d
+				transition: 0.2s background-color ease-in-out, 0.2s outline ease-in-out
+				&:hover
+					background-color: $gold
+					outline: none
 		.right
 			.photo
 				img
@@ -134,8 +147,13 @@ section.about
 				text-transform: uppercase
 				text-decoration: none
 				letter-spacing: 1px
-				border: 1px solid #4d4d4d
+				outline: 1px solid #4d4d4d
 				padding: 15px 30px
+				transition: 0.2s outline ease-in-out, 0.2s background-color ease-in-out, 0.2s color ease-in-out
+				&:hover
+					outline: none
+					background-color: $gold
+					color: #fff
 		.right
 			.photo
 				img
@@ -160,11 +178,15 @@ section.services
 			text-align: center
 			margin: 0 auto
 			width: 1190px
-			h3
-				color: #4d4d4d
-				font-family: Asap
-				font-size: 24px
-				line-height: 49px
+			div
+				transition: 0.2s transform ease-in-out
+				&:hover
+					transform: scale(1.1)
+				h3
+					color: #4d4d4d
+					font-family: Asap
+					font-size: 24px
+					line-height: 49px
 section.skills
 	height: 765px
 	display: flex
@@ -191,6 +213,10 @@ section.portfolio
 			grid-template-columns: 368px 368px 368px
 			justify-content: center
 			gap: 30px
+			div
+				transition: 0.2s transform ease-in-out
+				&:hover
+					transform: scale(0.9)
 		button
 			color: #4d4d4d
 			font-family: Asap, sans-serif
@@ -200,6 +226,7 @@ section.portfolio
 			margin-top: 28px
 			position: relative
 			left: 50%
+			display: inline-block
 			transform: translate(-50%)
 			text-transform: uppercase
 			letter-spacing: 0.96px
@@ -208,6 +235,7 @@ section.portfolio
 			cursor: pointer
 			outline: none
 			border: none
+			transition: 0.2 transform ease-in-out
 section.testimonials
 	height: 710px
 	display: flex
@@ -341,6 +369,13 @@ section.contact
 				background-color: #ffffff
 				border: none
 				outline: none
+				transition: 0.2s padding ease-in-out
+				cursor: pointer
+				&:hover
+					padding: 15px 36px
+				img
+					width: 15px
+					margin-left: 7px
 		.last
 			position: relative
 			bottom: 0
