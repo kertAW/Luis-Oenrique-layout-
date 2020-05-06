@@ -357,7 +357,11 @@ section.contact .container form {
   left: 50%;
   transform: translate(-50%);
 }
-section.contact .container form input {
+section.contact .container form .top {
+  display: flex;
+  justify-content: space-between;
+}
+section.contact .container form .top input {
   width: 370px;
   height: 57px;
   background-color: #fff;
@@ -369,7 +373,7 @@ section.contact .container form input {
   letter-spacing: 0.96px;
 }
 section.contact .container form textarea {
-  width: 744px;
+  width: 100%;
   height: 207px;
   background-color: #fff;
   color: #212121;
@@ -389,7 +393,7 @@ section.contact .container form button {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.96px;
+  letter-spacing: 1px;
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -399,44 +403,49 @@ section.contact .container form button {
   border: none;
   outline: none;
 }
-section.contact .container hr {
-  margin-top: 58px;
-  margin-bottom: 26px;
+section.contact .container .last {
+  position: relative;
+  bottom: 0;
 }
-section.contact .container .link {
+section.contact .container .last hr {
+  margin-top: 58px;
+}
+section.contact .container .last .link {
   width: 206px;
   display: flex;
   justify-content: space-between;
+  margin-top: 26px;
 }
-section.contact .container .link div {
+section.contact .container .last .link a {
   width: 27px;
   height: 27px;
 }
-section.contact .container .link div:first-child {
+section.contact .container .last .link a:first-child {
   background: #fff url("../img/icons/facebook.png") center center no-repeat;
 }
-section.contact .container .link div:nth-child(2) {
+section.contact .container .last .link a:nth-child(2) {
   background: #0084b4 url("../img/icons/twitter.png") center center no-repeat;
 }
-section.contact .container .link div:nth-child(3) {
+section.contact .container .last .link a:nth-child(3) {
   background: #fff url("../img/icons/in.png") center center no-repeat;
 }
-section.contact .container .link div:nth-child(4) {
+section.contact .container .last .link a:nth-child(4) {
   background: #fff url("../img/icons/google.png") center center no-repeat;
 }
-section.contact .container .link div:nth-child(5) {
+section.contact .container .last .link a:nth-child(5) {
   background: #fff url("../img/icons/be.png") center center no-repeat;
 }
-section.contact .container .link div:last-child {
+section.contact .container .last .link a:last-child {
   background: #fff url("../img/icons/ball.png") center center no-repeat;
 }
-section.contact .container p {
+section.contact .container .last p {
   color: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.96px;
+  letter-spacing: 1px;
   position: absolute;
+  bottom: 5px;
   left: 50%;
   transform: translate(-50%);
 }
