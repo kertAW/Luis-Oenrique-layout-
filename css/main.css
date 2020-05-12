@@ -107,37 +107,39 @@
   margin-top: 2px;
   margin-bottom: 28px;
 }
-.header-bottom .left .more {
-  display: inline-block;
+.header-bottom .left .links {
+  display: flex;
+  justify-content: space-between;
+  width: 328px;
+}
+.header-bottom .left .links a {
   color: #4d4d4d;
   font-family: Asap, sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.96px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+}
+.header-bottom .left .links .more {
   box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   text-decoration: none;
-  padding: 15px 25px;
   margin-right: 20px;
   transition: 0.2s transform ease-in-out;
 }
-.header-bottom .left .more:hover {
+.header-bottom .left .links .more:hover {
   transform: scale(1.1);
 }
-.header-bottom .left .hire {
-  color: #4d4d4d;
-  font-family: Asap, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.96px;
-  text-decoration: none;
-  padding: 14px 43px 14px 43px;
+.header-bottom .left .links .hire {
   outline: 1px solid #4d4d4d;
   transition: 0.2s background-color ease-in-out, 0.2s outline ease-in-out;
 }
-.header-bottom .left .hire:hover {
+.header-bottom .left .links .hire:hover {
   background-color: #f2d600;
   outline: none;
 }
@@ -181,10 +183,14 @@ section.about .container .left a {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
   letter-spacing: 1px;
+  text-decoration: none;
+  width: 245px;
+  height: 50px;
+  display: block;
   outline: 1px solid #4d4d4d;
-  padding: 15px 30px;
   transition: 0.2s outline ease-in-out, 0.2s background-color ease-in-out, 0.2s color ease-in-out;
 }
 section.about .container .left a:hover {
@@ -268,25 +274,33 @@ section.portfolio .container .items div {
 section.portfolio .container .items div:hover {
   transform: scale(0.9);
 }
-section.portfolio .container button {
+section.portfolio .container .more {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+section.portfolio .container .more button {
+  width: 160px;
+  height: 50px;
   color: #4d4d4d;
   font-family: Asap, sans-serif;
   font-size: 16px;
   font-weight: 500;
-  padding: 15px 30px;
-  margin-top: 28px;
-  position: relative;
-  left: 50%;
-  display: inline-block;
-  transform: translate(-50%);
   text-transform: uppercase;
-  letter-spacing: 0.96px;
-  box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: block;
   cursor: pointer;
   outline: none;
   border: none;
-  transition: 0.2 transform ease-in-out;
+  background-color: #fff;
+  box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.2s transform ease-in-out;
+}
+section.portfolio .container .more button:hover {
+  transform: scale(1.1);
 }
 
 section.testimonials {
@@ -427,28 +441,33 @@ section.contact .container form textarea {
   letter-spacing: 0.96px;
   resize: none;
 }
-section.contact .container form button {
+section.contact .container form .sub {
+  display: flex;
+  justify-content: center;
+}
+section.contact .container form .sub button {
   color: #4d4d4d;
   font-family: Asap, sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
   letter-spacing: 1px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  padding: 15px 30px;
+  text-decoration: none;
+  width: 123px;
+  height: 50px;
   box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border: none;
   outline: none;
-  transition: 0.2s padding ease-in-out;
+  transition: 0.2s width ease-in-out;
   cursor: pointer;
 }
-section.contact .container form button:hover {
-  padding: 15px 36px;
+section.contact .container form .sub button:hover {
+  width: 136px;
 }
-section.contact .container form button img {
+section.contact .container form .sub button img {
   width: 15px;
   margin-left: 7px;
 }
@@ -497,6 +516,17 @@ section.contact .container .last p {
   bottom: 5px;
   left: 50%;
   transform: translate(-50%);
+}
+
+#arrowTop {
+  background: url(../img/icons/upArrow.svg) center center;
+  position: fixed;
+  bottom: 193px;
+  right: 30px;
+  padding: 25px;
+  cursor: pointer;
+  box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
